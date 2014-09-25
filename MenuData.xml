@@ -1,0 +1,64 @@
+<menu name="item">
+ <station name="The Option Meal Bundles" id="336" type="sc">
+     <item idesc="All American Cheeseburger Meal" iid="2" igroup="upl_online_hamburger" ifat="0" icond="AAAB" icost="1.00" ifdesc="All beef hamburger topped with American cheese. Served with 3 sides and beverage." iextra=""/>
+     <item idesc="All American Hamburger Meal" iid="1" igroup="upl_online_hamburger" ifat="0" icond="AAAB" icost="1.00" ifdesc="All beef hamburger. Served with 3 sides and beverage" iextra=""/>
+     <item idesc="Chipotle Ranch Cheeseburger" iid="4359" igroup="upl_online_tmpphpc0V7Dw" ifat="0" icond="AAAB" icost="1.00" ifdesc="All beef hamburger topped with Swiss cheese and our house made chipotle ranch dressing. Served with 3 sides and a beverage." iextra=""/>
+     <item idesc="Burger of the Month-Bruschetta" iid="4360" igroup="upl_online_tmpphp2wIO71" ifat="0" icond="AAAB" icost="1.00" ifdesc="Bruschetta Burger- Garlic seasoned bun with Monterey Jack cheese and house made bruschetta. Served with 3 sides and a beverage." iextra=""/>
+     <item idesc="Godfathers Pizza 2 Slice Meal" iid="4" igroup="upl_online_doublep" ifat="0" icond="ACAAAB" icost="1.00" ifdesc="2 slices of fresh Godfathers pizza. Choose from our daily selections. Make note below if you would like two of the same. Served with 3 sides and a beverage." iextra=""/>
+     <item idesc="Grilled Chicken Sandwich Meal" iid="3" igroup="upl_online_grilledchixsand" ifat="0" icond="ADAAAB" icost="1.00" ifdesc="Grilled Chicken Breast sandwich with choice of seasoning, 3 sides and beverage" iextra=""/>
+     <item idesc="Bowl Soup and Breadstick Meal" iid="7" igroup="upl_online_chixnoodlesoup" ifat="0" icond="AEAAAB" icost="1.00" ifdesc="Bowl of our daily soup selection with breadstick, 3 sides and a beverage" iextra=""/>
+     <item idesc="Excessive Cheddahbration Meal" iid="6" igroup="upl_online_tmpphp9ilcIs" ifat="0" icond="AAAB" icost="1.00" ifdesc="Gourmet cheese sandwich with Cheddar, monterey jack and provolone cheese. Served with 3 sides and a beverage" iextra=""/>
+     <item idesc="Grilled Garden Burger Meal" iid="5" igroup="upl_online_black_bean_burger" ifat="0" icond="AAAB" icost="1.00" ifdesc="Garden burger with 3 sides and beverage" iextra=""/>
+     <item idesc="Cranberry Almond Chicken Salad " iid="12" igroup="upl_online_tmpphphwJ4j9" ifat="0" icond="ABAA" icost="1.00" ifdesc="Seasoned chicken tenders, romaine lettuce, mixed greens, celery, craisins and toasted almonds. Served with honey mustard dressing, bread stick, 3 sides and a beverage" iextra=""/>
+     <item idesc="Chicken Caesar Salad Meal" iid="14" igroup="upl_online_tmpphpbG8wC0" ifat="0" icond="ABAA" icost="1.00" ifdesc="Grilled chicken strips on a bed of romaine lettuce topped with black olives, tomatoes and parmesan cheese. Served with creamy Caesar dressing, breadstick 3 sides and a beverage" iextra=""/>
+     <item idesc="Salad of the Month" iid="8195" igroup="upl_online_tmpphpzar0eL" ifat="0" icond="AAAB" icost="1.00" ifdesc="Zucchini Chicken Salad-A blend of romaine lettuce and spring mix, topped with grilled cajun chicken, zucchini, red onion and green pepper. Served with sweet vidalia onion  dressing, breadstick, 3 sides and a beverage." iextra=""/>
+     <item idesc="Popcorn Shrimp" iid="4321" igroup="upl_online_tmpphpWJ7rBo" ifat="0" icond="AAAB" icost="1.00" ifdesc="Breaded popcorn shrimp served with cocktail sauce. Served with 3 sides and a beverage." iextra=""/>
+     <item idesc="Fuse Turkey Burger" iid="9954" igroup="upl_online_tmpphpiZB0DV" ifat="0" icond="AAAB" icost="1.00" ifdesc="Ground turkey, whole grain brown rice, spinach, roasted onion, celery and dried cherries on a toasted bun. Served with 3 sides and a beverage." iextra=""/>
+     <item idesc="Fuse Turkey Cheeseburger" iid="9972" igroup="upl_online_tmpphpp8TIfz" ifat="0" icost="1.00" ifdesc="A blend of all-natural ground turkey, whole grain brown rice, spinach, roasted onion, celery, and dried cherries covered with American cheese on a toasted bun. Served with 3 sides and a beverage.." iextra=""/>
+ </station>
+</menu>
+<menu name="condiment">
+  <cc cclass="aa" cmin="0" cdisp="3" cond="Bundle Sides">
+    <cond cid="21" cname="Red Apple" />
+    <cond cid="24" cname="Orange" />
+    <cond cid="23" cname="Banana" />
+    <cond cid="22" cname="Green Apple" />
+    <cond cid="4355" cname="Tossed Side Salad" />
+    <cond cid="15" cname="Baby Carrots" />
+    <cond cid="627" cname="Apple Wedges" />
+    <cond cid="629" cname="Grapes" />
+    <cond cid="913" cname="Applesauce" />
+    <cond cid="19" cname="Lowfat Yogurt" />
+    <cond cid="18" cname="Fat Free Yogurt" />
+    <cond cid="4325" cname="Cheese Sticks (2)" />
+    <cond cid="20" cname="Raisins" />
+    <cond cid="30" cname="French Fries" />
+    <cond cid="26" cname="Chips - Any" />
+    <cond cid="8124" cname="Ice Cream Novelty" />
+    <cond cid="4368" cname="Onion Rings" />
+    <cond cid="9956" cname="Bacon-2 Slices On Sandwich" />
+    <cond cid="9958" cname="Bacon-2 Slices As A Side" />
+    <cond cid="76" cname="Ranch Pasta Primavera" />
+  </cc>
+  <cc cclass="ab" cmin="0" cdisp="1" cond="Bundle Beverages">
+    <cond cid="43" cname="24 Oz Soda" />
+    <cond cid="44" cname="10 Oz Skim Milk" />
+    <cond cid="45" cname="10 Oz 2 Percent Milk" />
+    <cond cid="46" cname="10 Oz Chocolate Milk" />
+    <cond cid="4323" cname="Orange Juice Carton" />
+  </cc>
+  <cc cclass="ac" cmin="1" cdisp="2" cond="Slice Options">
+    <cond cid="8809" cname="Pepperoni" cdef="1" />
+    <cond cid="8811" cname="Sausage" />
+    <cond cid="8813" cname="Cheese" />
+    <cond cid="9964" cname="Thin Baja Taco" />
+  </cc>
+  <cc cclass="ad" cmin="0" cdisp="1" cond="Seasonsings">
+    <cond cid="59" cname="Cajun" />
+    <cond cid="60" cname="Fajita" />
+    <cond cid="61" cname="Greek" />
+  </cc>
+  <cc cclass="ae" cmin="1" cdisp="1" cond="Soup Choice">
+    <cond cid="603" cname="Broccoli Cheddar" cdef="1" />
+  </cc>
+</menu>

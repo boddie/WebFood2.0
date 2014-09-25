@@ -1,0 +1,17 @@
+var locations = [
+	{
+		name: '',
+		message: '',
+		address: '',
+		location: {lat, long},
+		phone: '',
+		id: '',
+		hours: {} // I have no idea what kind of system they use for figuring out whether or not a store is open. Take a look at the menu area of the StoreData.xml. If you can figure it out, go ahead and add it. 
+	},
+	
+	{
+		...
+	},
+
+	...
+];
