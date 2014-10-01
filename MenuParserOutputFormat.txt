@@ -26,6 +26,9 @@ var menuOptions = {
 		
 		...
 	],
+	
+	// Don't know what you got going on down there, so
+	// I made a representation that better fits the data
 	condiments: [
 		{
 			id: '' // 2 letters
