@@ -7,7 +7,6 @@ $(document).ready(function () {
 		var condimentMenus = CondimentMenus(xmlObject);
 		var menuOptions = { entreeMenus: entreeMenus, condimentMenus: condimentMenus }
 		
-		debugger;
         return menuOptions;
 	}
 	
