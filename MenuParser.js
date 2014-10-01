@@ -42,6 +42,7 @@ function EntreeMenus(xml) {
 						 id: id,
 						 cost: cost,
 						 ifat: ifat, 
+						 imageName: imageName,
 						 condimentIds: condimentIds, 
 						 longDescription: longDescription,
 						 iextra: iextra });
