@@ -5,7 +5,6 @@ function MenuParser(xml_string) {
 	var entreeMenus = EntreeMenus(xmlObject);
 	var condimentMenus = CondimentMenus(xmlObject);
 	var menuOptions = { entreeMenus: entreeMenus, condimentMenus: condimentMenus }
-	debugger;
 	return menuOptions;
 }
 
