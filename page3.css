@@ -1,0 +1,30 @@
+.food {
+	width:100px;
+	height:100px;
+	float:left;	
+}
+
+div#description .test1 {
+	float:left;
+	clear:right;
+	margin-top:0px;
+	margin-bottom:5px;
+}
+
+div#description .test2 {
+	float:left;
+}
+
+div#description .food {
+	float:left;
+}
+
+div#bundle {
+	float: left;
+	clear: left;
+}
+
+div.column {
+	width: 150px;
+	float: left;
+}
