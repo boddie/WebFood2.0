@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="js/vendor/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="js/vendor/underscore.js"></script>
+    <script type="text/javascript" src="js/vendor/backbone.js"></script>
+    <script type="text/javascript" src="js/vendor/react.js"></script>
+    <script type="text/javascript" src="js/vendor/jsx_transformer.js"></script>
+
+    <script type="text/javascript" src="js/parser.js"></script>
+    <script type="text/javascript" src="js/service.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+<div id="page"></div>
+<script type="text/jsx">
+      /**
+       * @jsx React.DOM
+       */
+
+      var Content404 = React.createClass({
+        render: function() {
+          return (
+            <div>404 Page Not Found</div>
+          );
+        }
+      });
+
+      var Header = React.createClass({
+        render: function() {
+          return (
+            <h1>WebFood 2.0</h1>
+          );
+        }
+      });
+
+      var Location = React.createClass({
+        render: function() {
+          return (
+              <div className="location-container" onClick={this.props.onNavigate}>
+                <p className="location-name">{this.props.data.name}</p>
+                <p className="location-location-address1">{this.props.data.location.l1}</p>
+                <p className="location-location-address2">{this.props.data.location.l2}</p>
+                <p className="location-location-address3">{this.props.data.location.l3}</p>
+              </div>
+          );
+        }
+      });
+
+      var Locations = React.createClass({
+        getInitialState: function() {
+            return {
+              locations: [],
+            };
+          },
+
+          componentDidMount: function() {
+            Service.getLocations().then(function(locations) {
+              if (this.isMounted()) {
+                this.setState({
+                  locations: locations
+                });
+              }
+            }.bind(this));
+          },
+
+        navigate: function(id) {
+          this.props.router.navigate("menu/" + id, {trigger: true});
+        },
+
+        render: function() {
+          var locations = this.state.locations.map(function(loc) {
+            return (
+              <Location key={loc.id} data={loc} onNavigate={this.navigate.bind(this, loc.id)} />
+            );
+          }.bind(this));
+          return (
+            <div>
+              <h3>Select a dining location:</h3>
+              <div className = "locations-container">
+                {locations}
+              </div>
+            </div>
+          );
+        }
+      });
+
+      var MainMenuItem = React.createClass({
+        render: function() {
+          return (
+            <div className="main-menu-item" onClick={this.props.setChoice}>
+              <div className="main-menu-item-image-container">
+                <img className="main-menu-item-image" src={"https://iastate.webfood.com/admin/images/uploaded/" + this.props.data.imageName + ".png"}></img>
+              </div>
+              <div className="main-menu-item-data-container">
+                <h4 className="main-menu-item-name">{this.props.data.description}</h4>
+                <div className="main-menu-item-cost">{"$" + this.props.data.cost}</div>
+                <div className="main-menu-item-description">{this.props.data.longDescription}</div>
+              </div>
+            </div>
+          );
+        }
+      });
+
+      var SubMenuButton = React.createClass({
+        render: function() {
+           var cx = React.addons.classSet;
+           var classes = cx({
+             "sub-menu-button": true,
+             "list-group-item": true,
+             "active": this.props.selected
+           });
+          return (
+            <a href="javascript:void(0);" className={classes} onClick={this.props.click}>
+               {this.props.data.menuName}
+            </a>
+          );
+        }
+      });
+
+      var MainMenu = React.createClass({
+        getInitialState: function() {
+            return {
+              menu: [],
+              curMenu: 0,
+            };
+          },
+
+          componentDidMount: function() {
+            Service.getMenu(this.props.args[0]).then(function(menu) {
+              if (this.isMounted()) {
+                this.setState({
+                  menu: menu.entreeMenus
+                });
+              }
+            }.bind(this));
+          },
+
+          setMenu: function(index) {
+            this.setState({
+              curMenu: index
+            });
+          },
+
+          setChoice: function(itemId) {
+            this.props.router.navigate("menu/" + this.props.args[0] + "/" + itemId, {trigger: true});
+          },
+
+
+        render: function() {
+          var menus = this.state.menu.map(function(subMenuInfo, i) {
+            return (
+              <SubMenuButton key = {subMenuInfo.id} data={subMenuInfo} selected={this.state.curMenu == i} click={this.setMenu.bind(this, i)} />
+            );
+          }.bind(this));
+
+          var items;
+          if(this.state.menu.length > 0) {
+            items = this.state.menu[this.state.curMenu].items.map(function(item) {
+              return (
+                <MainMenuItem key = {item.id} data={item} setChoice={this.setChoice.bind(this, item.id)} />
+              );
+            }.bind(this));
+          } else {
+            items = [];
+          }
+          return (
+            <div className="menu-container row">
+              <div className="menu-selection-container col-sm-3">
+                <h4>Available Menus</h4>
+                <div className="sub-menu-selection-container list-group">
+                  {menus}
+                </div>
+              </div>
+
+              <div className = "col-sm-9">
+                <h4>Available Menus</h4>
+                <div className="menu-items-container">
+                  {items}
+                </div>
+              </div>
+            </div>
+          );
+        }
+      });
+
+      var SubMenuSides = React.createClass({
+        render: function() {
+          console.log(this.props.data);
+          var items = this.props.data.condiments.map(function(item) {
+            return (
+              <li className="sub-menu-sides-item">
+                <label><input type="checkbox" name="checkbox" value="value" />{" " + item.name} </label>
+              </li>
+            );
+          });
+          return (
+            <div className="sub-menu-sides-item-container">
+              <div className="sub-menu-sides-item-header">{this.props.data.description + " (" + this.props.data.disp + ")"}</div>
+              <ul className="sub-menu-sides-items-container list-unstyled">
+                {items}
+              </ul>
+            </div>
+          );
+        }
+      });
+
+      var SubMenu = React.createClass({
+        getInitialState: function() {
+            return {
+              menus: [],
+              selected: {}
+            };
+          },
+
+          componentDidMount: function() {
+            Service.getItem(this.props.args[0], this.props.args[1]).then(function(item) {
+              if (this.isMounted()) {
+                this.setState({
+                  selected: item,
+                  menus: item.subMenus
+                });
+              }
+            }.bind(this));
+          },
+
+        render: function() {
+          var menus = this.state.menus.map(function(menu) {
+            return (
+              <SubMenuSides data={menu} />
+            );
+          });
+
+          return (
+            <div>
+              <h3>Customize Your Item</h3>
+              <div className="customize-order-container row">
+                <div className="customize-order-image-container col-sm-2">
+                  <img src={"https://iastate.webfood.com/admin/images/uploaded/" + this.state.selected.imageName + ".png"} className="customize-order-image"></img>
+                </div>
+                <div className="customize-order-info-container col-sm-10">
+                  <h4 className="customize-order-name">{this.state.selected.description}</h4>
+                  <div className="customize-order-description">{this.state.selected.longDescription}</div>
+                </div>
+              </div>
+
+              <div>
+                {menus}
+              </div>
+
+            </div>
+          );
+        }
+      });
+
+      var BaseView = React.createClass({
+        render: function() {
+          return (
+            <div id="base" className="container">
+              <Header />
+              {this.props.children}
+            </div>
+          );
+        },
+      });
+
+    var Router = Backbone.Router.extend({
+      routes: {
+        "": "locations",
+        "menu/:locationId": "menu1",
+        "menu/:locationId/:mainSelection": "menu2",
+        "*err": "404"
+      },
+    });
+
+    var router = new Router();
+
+    router.on('route', function(action, a) {
+      var pathMapping = {
+        "locations": Locations,
+        "menu1": MainMenu,
+        "menu2": SubMenu,
+      };
+
+      var Content = pathMapping[action] || Content404;
+
+      React.renderComponent(
+        <BaseView router={router}>
+          <Content router={router} args={a} locations={[]}/>
+        </BaseView>,
+        document.getElementById("page")
+      );
+    });
+
+    Backbone.history.start({pushState: false});
+
+
+    </script>
+</body>
+</html>
