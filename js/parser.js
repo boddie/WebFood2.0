@@ -2,7 +2,7 @@ var Parser = (function(){
   var parseLocations = function(xml) {
     var doc = $.parseXML(xml);
     var tree = $(doc);
-
+	
     var raw_locations = tree.find('menu[name="location"]').find("store");
     var times = tree.find('menu[name="schedule"]');
     var locations = [];

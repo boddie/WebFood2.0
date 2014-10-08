@@ -1,0 +1,403 @@
+<menu name="config">
+  <cfg k="ouniq" v="d4998782619eee0b0ee1957fd7edd518"/>
+  <cfg k="dateTime" v="2014-09-24 20:07:08"/>
+  <cfg k="institution" v="Iowa State Dining"/>
+  <cfg k="nmPath" v="1"/>
+  <cfg k="boxBorder" v="0x000000"/>
+  <cfg k="defaultAccountText" v="Account Number or ISU Card Number"/>
+  <cfg k="banner" v=" "/>
+  <cfg k="cache" v="0"/>
+  <cfg k="clickToStart" v="1"/>
+  <cfg k="condSpy" v="1"/>
+  <cfg k="defaultStoreID" v="2"/>
+  <cfg k="disableOneTime" v="1"/>
+  <cfg k="gradeBackgrounds" v="1"/>
+  <cfg k="gradeButtons" v="1"/>
+  <cfg k="gradeForegrounds" v="1"/>
+  <cfg k="pickupLookupRadius" v="20"/>
+  <cfg k="promoCodeLength" v="11"/>
+  <cfg k="retailOps" v="1-0-1-0-0-1-0-1-0-0"/>
+  <cfg k="showPromoCode" v="1"/>
+  <cfg k="tipOps" v="0-0-0-0-0-0-0-0-0-0"/>
+  <cfg k="bgcolor" v="0xffffff"/>
+  <cfg k="uplImageSuf" v=".png"/>
+  <cfg k="itemFill" v="0xffffff"/>
+  <cfg k="bgConfirm" v="0xffffff"/>
+  <cfg k="itemPaneBG" v="0xffffff"/>
+  <cfg k="itemBorder" v="0xba0000"/>
+  <cfg k="cardLegacyWarning" v="Attn: "/>
+  <cfg k="staTxt" v="0x000000"/>
+  <cfg k="staOver" v="0xffbf6c"/>
+  <cfg k="staTxtOver" v="0x333333"/>
+  <cfg k="cardLowBalWarning" v="Low Bal"/>
+  <cfg k="staTxtSelected" v="0x333333"/>
+  <cfg k="categoryBorder" v="0xc72335"/>
+  <cfg k="subNorm" v="0xffffff"/>
+  <cfg k="bgFadeColor" v="0xffffff"/>
+  <cfg k="subTxt" v="0x333333"/>
+  <cfg k="subOver" v="0xffbf6c"/>
+  <cfg k="subTxtOver" v="0x333333"/>
+  <cfg k="subSelected" v="0xffbf6c"/>
+  <cfg k="subTxtSelected" v="0x333333"/>
+  <cfg k="cuBorder" v="0xbc0000"/>
+  <cfg k="selSel" v="0xE71A38"/>
+  <cfg k="hidePlaceAnotherOrder" v="1"/>
+  <cfg k="cuTxt" v="0x333333"/>
+  <cfg k="staSelected" v="0xE71A38"/>
+  <cfg k="patEdgeColor" v="0xffffff"/>
+  <cfg k="cuCheckHalo" v="haloOrange"/>
+  <cfg k="roundBtnEdge" v="0xE71A38"/>
+  <cfg k="cuBtnTxt" v="0xffffff"/>
+  <cfg k="checkPaneBG" v="0xfff8f4"/>
+  <cfg k="patColor" v="0xE51837"/>
+  <cfg k="checkItemBtnTxt" v="0x333333"/>
+  <cfg k="roundBtnShadow" v="0xE71A38"/>
+  <cfg k="selPane" v="0x502e00"/>
+  <cfg k="selBtn" v="0xf5ab49"/>
+  <cfg k="selItem" v="0xffffff"/>
+  <cfg k="cuItemPane" v="0xE3203D"/>
+  <cfg k="checkItemA" v="0xE3203D"/>
+  <cfg k="patBtnColor" v="0xc72335"/>
+  <cfg k="patTxtFmt" v="0x333333"/>
+  <cfg k="checkItemB" v="0xE3203D"/>
+  <cfg k="roundBtnTxt" v="0xffffff"/>
+  <cfg k="addressBar" v="0xffffff"/>
+  <cfg k="checkoutNote" v="Note: Only available payment methods for this order type are displayed. Once you select the checkout button below, please do not close or refresh your web browser until processing is complete. An order confirmation will be emailed to you within three minutes of a successful checkout."/>
+  <cfg k="confirmationNote" v="Your order has been successfully processed. An order confirmation has been emailed to you."/>
+  <cfg k="faqSupportContact" v=" "/>
+  <cfg k="phoneHint" v="714-555-1212"/>
+  <cfg k="cardNAWarning" v="NA"/>
+  <cfg k="cuCheckTxt" v="0xffffff"/>
+  <cfg k="checkItemBtn" v="0xffffff"/>
+  <cfg k="maxAllowedPayAccount" v="0"/>
+  <cfg k="cuBtn" v="0xA4A4A4"/>
+  <cfg k="cuOpNameArray" v="Pickup=Delivery=Home Delivery=Dine-In=Curbside Pickup=Catering - Pickup=unknown=Catering - Delivery"/>
+  <cfg k="cuHeaderTxt" v="0xffffff"/>
+  <cfg k="cuFill" v="0xffffff"/>
+  <cfg k="roundBtnBezel" v="0xC5C6CA"/>
+  <cfg k="selBox" v="0xE71A38"/>
+  <cfg k="imageSuf" v="_150.swf"/>
+  <cfg k="specialLength" v="14"/>
+  <cfg k="sessionTimeout" v="5"/>
+  <cfg k="addPrefPayLabel" v="Add Payment Method"/>
+  <cfg k="customCheckoutText" v="If you do not receive an email within 3 minutes or require additional assistance please contact the pick-up location for your order.  Please take note of your ORDER NUMBER to confirm when picking up your food."/>
+  <cfg k="no_timeslot_error" v="You cannot order from this store at this time.  We are sorry for the inconvenience."/>
+  <cfg k="roundBtnColor" v="0xffffff"/>
+  <cfg k="calendar_display_days" v="1"/>
+  <cfg k="showFavorites" v="0"/>
+  <cfg k="faqSupportContact" v="Online help is currently not available."/>
+  <cfg k="customTimeText" v="If your order isnt picked up within 30 minutes from the time it was scheduled for pick-up your order will be discarded and no refund will be given!"/>
+  <cfg k="hideTellAFriend" v="0"/>
+  <cfg k="imagePre" v="https://iastate.webfood.com/admin/images/uploaded/"/>
+  <cfg k="uplImagePre" v="https://iastate.webfood.com/admin/images/uploaded/"/>
+  <cfg k="enable_mobile_favorites" v="1"/>
+</menu>
+<menu name="location">
+  <store
+    sname="Clydes Sports Club Meal Bundles"
+    shall="2"
+    snum="2"
+    soptype="1-0-0-0-0-0-0-0-0"
+    sgroup="0"
+    sdelhall=""
+    scard=""
+    saddr="515-294-8330"
+    saddr2="UDCC"
+    scity="Ames"
+    sstate="IA"
+    szip="50012"
+    slang="en_US"
+    slat="42.3100"
+    slon="-79.1000"
+    sphone="5152948330"
+    sact="1"
+    smsg="The Fuse Turkey burger is now on the menu!"/>
+  <store
+    sname="Clydes Sports Club Full Menu"
+    shall="4"
+    snum="4"
+    soptype="1-0-0-0-0-0-0-0-0"
+    sgroup="0"
+    sdelhall=""
+    scard=""
+    saddr="515-294-8330"
+    saddr2="UDCC"
+    scity="Ames"
+    sstate="IA"
+    szip="50012"
+    slang="en_US"
+    slat="42.3100"
+    slon="-79.1000"
+    sphone="5152948330"
+    sact="1"
+    smsg=""/>
+  <store
+    sname="HMC Breakfast Ala Carte"
+    shall="32"
+    snum="32"
+    soptype="1-0-0-0-0-0-0-0-0"
+    sgroup="0"
+    sdelhall=""
+    scard=""
+    saddr="Hawthorn"
+    saddr2="ONLINE"
+    scity="Ames"
+    sstate="IA"
+    szip="50130"
+    slang="en_US"
+    slat="42.3100"
+    slon="-79.1000"
+    sphone="1231231234"
+    sact="1"
+    smsg=""/>
+  <store
+    sname="HMC Breakfast Bundles"
+    shall="33"
+    snum="33"
+    soptype="1-0-0-0-0-0-0-0-0"
+    sgroup="0"
+    sdelhall=""
+    scard=""
+    saddr="Hawthorn"
+    saddr2="ONLINE "
+    scity="Ames"
+    sstate="IA"
+    szip="50130"
+    slang="en_US"
+    slat="42.3100"
+    slon="-79.1000"
+    sphone="1231231234"
+    sact="1"
+    smsg=""/>
+  <store
+    sname="HMC Ala Carte"
+    shall="34"
+    snum="34"
+    soptype="1-0-0-0-0-0-0-0-0"
+    sgroup="0"
+    sdelhall=""
+    scard=""
+    saddr="Hawthorn"
+    saddr2="ONLINE "
+    scity="Ames"
+    sstate="IA"
+    szip="50130"
+    slang="en_US"
+    slat="42.3100"
+    slon="-79.1000"
+    sphone="1231231234"
+    sact="1"
+    smsg="NOTICE: Wait time might be longer than expected during lunch and dinner hours."/>
+  <store
+    sname="HMC Meal Bundles"
+    shall="35"
+    snum="35"
+    soptype="1-0-0-0-0-0-0-0-0"
+    sgroup="0"
+    sdelhall=""
+    scard=""
+    saddr="Hawthorn"
+    saddr2="ONLINE "
+    scity="Ames"
+    sstate="IA"
+    szip="50130"
+    slang="en_US"
+    slat="42.3100"
+    slon="-79.1000"
+    sphone="1231231234"
+    sact="1"
+    smsg="NOTICE: Wait time might be longer than expected during lunch and dinner hours. "/>
+  <store
+    sname="Hot Stuff Pizza"
+    shall="28"
+    snum="28"
+    soptype="1-1-0-0-0-0-0-0-0"
+    sgroup="0"
+    sdelhall=""
+    scard=""
+    saddr="Hawthorn"
+    saddr2="ONLINE"
+    scity="Ames"
+    sstate="IA"
+    szip="50010"
+    slang="en_US"
+    slat="42.3100"
+    slon="-79.1000"
+    sphone="1231231234"
+    sact="0"
+    smsg=""/>
+  <store
+    sname="Conversations Dining Ala Carte"
+    shall="39"
+    snum="39"
+    soptype="1-0-0-0-0-0-0-0-0"
+    sgroup="0"
+    sdelhall=""
+    scard=""
+    saddr="Oak Elm Residence Hall"
+    saddr2="ONLINE"
+    scity="Ames"
+    sstate="IA"
+    szip="50130"
+    slang="en_US"
+    slat="42.3100"
+    slon="-79.1000"
+    sphone="5152943856"
+    sact="0"
+    smsg=""/>
+  <store
+    sname="Conversations Dining Bundles"
+    shall="40"
+    snum="40"
+    soptype="1-0-0-0-0-0-0-0-0"
+    sgroup="0"
+    sdelhall=""
+    scard=""
+    saddr="Oak Elm Residence Hall"
+    saddr2="ONLINE"
+    scity="Ames"
+    sstate="IA"
+    szip="50130"
+    slang="en_US"
+    slat="42.3100"
+    slon="-79.1000"
+    sphone="5152943856"
+    sact="0"
+    smsg=""/>
+</menu>
+<menu name="schedule">
+<store n="2" op="0">
+<time t="0161502245"/>
+<time t="1104512245"/>
+<time t="2104522245"/>
+<time t="3104532245"/>
+<time t="4104542245"/>
+<time t="5104551415"/>
+<time t="6111562145"/>
+</store>
+<store n="4" op="0">
+<time t="0161502245"/>
+<time t="1104512245"/>
+<time t="2104522245"/>
+<time t="3104532245"/>
+<time t="4104542245"/>
+<time t="5104551415"/>
+<time t="6111562145"/>
+</store>
+<store n="6" op="0">
+<time t="1070011000"/>
+<time t="2070021000"/>
+<time t="3070031000"/>
+<time t="4070041000"/>
+<time t="5070051000"/>
+</store>
+<store n="7" op="0">
+<time t="0100002345"/>
+<time t="6100061945"/>
+</store>
+<store n="14" op="0">
+<time t="0110002359"/>
+<time t="1070012359"/>
+<time t="2070022359"/>
+<time t="3070032359"/>
+<time t="4070042359"/>
+<time t="5070052000"/>
+<time t="6110062100"/>
+</store>
+<store n="21" op="0">
+<time t="0000002359"/>
+<time t="1000012359"/>
+<time t="2000022359"/>
+<time t="3000032359"/>
+<time t="4000042359"/>
+<time t="5000052359"/>
+<time t="6000062359"/>
+</store>
+<store n="23" op="0">
+<time t="0110002359"/>
+<time t="1070012359"/>
+<time t="2070022359"/>
+<time t="3070032359"/>
+<time t="4070042359"/>
+<time t="5070052000"/>
+<time t="6110062100"/>
+</store>
+<store n="25" op="0">
+<time t="0100002359"/>
+<time t="6100061959"/>
+</store>
+<store n="28" op="0">
+<time t="0112002340"/>
+<time t="1102012340"/>
+<time t="2102022340"/>
+<time t="3102032340"/>
+<time t="4102042340"/>
+<time t="5102052040"/>
+<time t="6112062040"/>
+</store>
+<store n="28" op="1">
+<time t="0112002340"/>
+<time t="1102012340"/>
+<time t="2102022340"/>
+<time t="3102032340"/>
+<time t="4102042340"/>
+<time t="5102052040"/>
+<time t="6112062040"/>
+</store>
+<store n="32" op="0">
+<time t="1070010950"/>
+<time t="2070020950"/>
+<time t="3070030950"/>
+<time t="4070040950"/>
+<time t="5070050950"/>
+</store>
+<store n="33" op="0">
+<time t="1070010950"/>
+<time t="2070020950"/>
+<time t="3070030950"/>
+<time t="4070040950"/>
+<time t="5070050950"/>
+</store>
+<store n="34" op="0">
+<time t="0110002245"/>
+<time t="1100012245"/>
+<time t="2100022245"/>
+<time t="3100032245"/>
+<time t="4100042345"/>
+<time t="5100051945"/>
+<time t="6110062045"/>
+</store>
+<store n="35" op="0">
+<time t="0110002245"/>
+<time t="1100012245"/>
+<time t="2100022245"/>
+<time t="3100032245"/>
+<time t="4100042245"/>
+<time t="5100051945"/>
+<time t="6110062045"/>
+</store>
+<store n="36" op="0">
+<time t="0110002300"/>
+</store>
+<store n="36" op="1">
+<time t="0110002300"/>
+</store>
+<store n="37" op="0">
+<time t="0110002300"/>
+<time t="6110062000"/>
+</store>
+<store n="39" op="0">
+<time t="0191502300"/>
+<time t="1191512300"/>
+<time t="2191522300"/>
+<time t="3191532300"/>
+<time t="4191542300"/>
+</store>
+<store n="40" op="0">
+<time t="0191502300"/>
+<time t="1191512300"/>
+<time t="2191522300"/>
+<time t="3191532300"/>
+<time t="4191542300"/>
+</store>
+</menu>

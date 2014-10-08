@@ -1,0 +1,198 @@
+<menu name="item">
+ <station name="14 inch Godfathers Pizza" id="2" type="sc">
+     <item idesc="Wednesday Special" iid="7577" igroup="ommon/pizzameat1" ifat="15" icond="AAABAC" icost="20.95" ifdesc="Buy any 14 inch 2 Topping pizza and an order of 14 inch Super Sticks only $20.95 " iextra=""/>
+     <item idesc="Cheese Pizza" iid="198" igroup="common/phcheesefe" ifat="15" icost="14.50" ifdesc="14 inch Pizza with Mozzarella Cheese" iextra=""/>
+     <item idesc="One Topping Pizza" iid="6" igroup="common/pizzameat1" ifat="15" icond="ADAB" icost="15.95" ifdesc="14 inch Pizza with choice of topping" iextra=""/>
+     <item idesc="Two Topping Pizza" iid="7" igroup="upl_online_twotopping" ifat="15" icond="AAAB" icost="15.95" ifdesc="14 inch Pizza with two toppings" iextra=""/>
+     <item idesc="Three - Five Topping Pizza" iid="8" igroup="common/pizzameat1" ifat="15" icond="AEAB" icost="17.95" ifdesc="14 inch Pizza with three to five toppings" iextra=""/>
+     <item idesc="Classic Combo" iid="7237" igroup="common/ritwingpz" ifat="15" icond="AF" icost="17.95" ifdesc="14 inch Pie with Beef, Pepperoni, Sausage, Onions, Black Olives, Mushrooms & Mozzarella Cheese" iextra=""/>
+     <item idesc="Hot Stuff" iid="7238" igroup="common/phspicyhot" ifat="15" icond="AF" icost="17.95" ifdesc="14 inch Pie with Pepperoni, Italian Sausage, Beef, Onions, Jalapeno Peppers & Mozzarella Cheese" iextra=""/>
+     <item idesc="Humble Pie" iid="7239" igroup="upl_online_humble" ifat="15" icond="AF" icost="17.95" ifdesc="14 inch Pie with Pepperoni, Italian Sausage, Onions, Green Peppers & Mozzarella Cheese" iextra=""/>
+     <item idesc="Taco Pie" iid="7240" igroup="common/phchicksupr" ifat="15" icond="AF" icost="17.95" ifdesc="14 inch Pie with Beef, Onions, Tomatoes, Lettuce, Taco Sauce, Cheddar Cheese & Mozzarella Cheese" iextra=""/>
+     <item idesc="Veggie Pie" iid="7241" igroup="common/phvegetarian" ifat="15" icond="AF" icost="17.95" ifdesc="14 inch Pie with Green Peppers, Onions, Mushrooms, Black Olives, Tomatoes & Mozzarella Cheese" iextra=""/>
+     <item idesc="Chicken Bacon Ranch" iid="7242" igroup="upl_online_tmpphpIvryZh" ifat="15" icost="17.95" ifdesc="Ranch Sauce, Oven Roasted Chicken, Bacon Bits and Mozzarella Cheese" iextra=""/>
+     <item idesc="All Meat Combo" iid="8746" igroup="upl_online_5_meat_pizza" ifat="15" icond="AF" icost="17.95" ifdesc="14 inch Pie with Beef, Sausage,Ham, Bacon Bits and Mozzarella Cheese" iextra=""/>
+     <item idesc="Bacon Cheeseburger" iid="8747" igroup="upl_online_tmpphpfJE0g0" ifat="15" icond="AF" icost="17.95" ifdesc="14 inch Pie with Beef, Bacon Bits, Onions, Pickles, Cheddar Cheese and Mozzarella" iextra=""/>
+ </station>
+ <station name="Godfathers Pizza by the Slice" id="171" type="sc">
+     <item idesc="One Slice" iid="4346" igroup="upl_online_tmpphpmSPmXz" ifat="15" icond="AG" icost="2.75" ifdesc="One Slice - Choose from one of our daily selections." iextra=""/>
+     <item idesc="Two Slices" iid="4347" igroup="upl_online_tmpphpmSPmXz" ifat="15" icond="AHAG" icost="4.69" ifdesc="Two Slices - Choose from our daily selections. Place message in the notes if you want two of the same slice." iextra=""/>
+ </station>
+ <station name="Pregame Appetizers" id="169" type="sc">
+     <item idesc="Cheese Balls" iid="3802" igroup="upl_online_tmpphpnJAdQS" ifat="15" icost="4.40" ifdesc="Fried cheddar cheese ballss served with our homemade buttermilk ranch dressing for dipping." iextra=""/>
+     <item idesc="Championship Onion Rings - Full" iid="3805" igroup="upl_online_tmpphpMJjlgw" ifat="15" icost="3.80" ifdesc="Pick a winner and go for Clydes crispy-fried, batter-dipped onion rings. " iextra=""/>
+     <item idesc="Championship Onion Rings - Half" iid="3806" igroup="upl_online_tmpphpMJjlgw" ifat="15" icost="2.35" ifdesc="Pick a winner and go for Clydes crispy-fried, batter-dipped onion rings. " iextra=""/>
+     <item idesc="Large Breadsticks" iid="8834" igroup="upl_online_tmpphph69mlH" ifat="15" icost="5.29" ifdesc="Warm, buttery and perfect for dipping in our famous marinara sauce." iextra=""/>
+     <item idesc="Large Cheese Breadsticks" iid="8835" igroup="upl_online_tmpphpGZw14n" ifat="15" icost="7.29" ifdesc="A special blend of garlic, Italian Seasoning, and lots of mozzarella cheese ." iextra=""/>
+     <item idesc="Large Super Sticks" iid="8836" igroup="upl_online_tmpphpluLqwl" ifat="15" icost="9.79" ifdesc="Breadsticks with mozzarella cheese, cheddar cheese and bacon bits." iextra=""/>
+ </station>
+ <station name="All-American Burgers" id="208" type="sc">
+     <item idesc="All-American Classic" iid="3807" igroup="upl_online_hamburger" ifat="15" icond="AI" icost="3.95" ifdesc="All beef hamburger." iextra=""/>
+     <item idesc="All-American with Cheese" iid="3808" igroup="upl_online_bacon_cheeseburger" ifat="15" icond="AI" icost="4.25" ifdesc="All beef cheese burger topped with American cheese." iextra=""/>
+     <item idesc="All-American Bacon Cheeseburger" iid="3809" igroup="upl_online_bacon_cheeseburger" ifat="15" icond="AI" icost="4.95" ifdesc="All beef cheeseburger topped with American cheese and bacon." iextra=""/>
+     <item idesc="Chipolte Ranch Cheesebuger" iid="3810" igroup="upl_online_spicyburger" ifat="15" icond="AI" icost="4.95" ifdesc="All beef cheeseburger topped with swiss cheese and our house made chipotle ranch sauce!" iextra=""/>
+     <item idesc="Burger of the Month-Bruschetta" iid="4556" igroup="upl_online_tmpphp2wIO71" ifat="15" icond="AI" icost="4.95" ifdesc="Bruschettal Burger- Garlic seasoned bun with Monterey jack cheese and our house made bruschetta." iextra=""/>
+     <item idesc="Fuse Burger" iid="9970" igroup="upl_online_tmpphpiZB0DV" ifat="15" icond="AI" icost="4.40" ifdesc="A blend of all-natural ground turkey, whole grain brown rice, spinach, roasted onion, celery, and dried cherries served on a toasted bun. " iextra=""/>
+     <item idesc="Fuse Turkey Cheeseburger" iid="9971" igroup="upl_online_tmpphpp8TIfz" ifat="15" icond="AI" icost="4.70" ifdesc="A blend of all-natural ground turkey, whole grain brown rice, spinach, roasted onion, celery, and dried cherries and topped with American Cheese on a toasted bun." iextra=""/>
+ </station>
+ <station name="Gridiron Greats and Soups" id="195" type="sc">
+     <item idesc="Personal Fowl Chicken Sandwich" iid="3833" igroup="upl_online_grilledchixsand" ifat="15" icond="AJAI" icost="4.80" ifdesc="A 5 ounce chicken breast served on a kaiser. " iextra=""/>
+     <item idesc="Buffalo Style Chicken Sandwich" iid="3835" igroup="upl_online_buffalochix" ifat="15" icond="AI" icost="5.35" ifdesc="A 5 ounce chicken breast smothered in sizzlin hot sauce served on a kaiser. " iextra=""/>
+     <item idesc="Pigskin Pork Tenderloin Sandwich" iid="4329" igroup="upl_online_tmpphp5P1fUZ" ifat="15" icond="AI" icost="5.10" ifdesc="Our classic hand breaded pork tenderloin, served on a kaiser." iextra=""/>
+     <item idesc="Extra Point Popcorn Shrimp" iid="4938" igroup="upl_online_tmpphpWJ7rBo" ifat="15" icost="3.90" ifdesc="A generous portion of our delicious breaded and fried popcorn shrimp served with cocktail sauce." iextra=""/>
+     <item idesc="No Huddle Chicken Strips" iid="4331" igroup="upl_online_tmpphpvknziI" ifat="15" icond="AI" icost="4.00" ifdesc="Enjoy a delicious basket of our battered chicken strips. Comes with a side of ranch dressing." iextra=""/>
+     <item idesc="No Huddle Sizzlin Chicken Strips" iid="5081" igroup="upl_online_tmpphpew2SpM" ifat="15" icond="AI" icost="4.40" ifdesc="Battered chicken strips smothered in sizzlin hot sauce with a side of ranch dressing." iextra=""/>
+     <item idesc="Gridiron Garden Burger" iid="4328" igroup="upl_online_black_bean_burger" ifat="15" icost="4.50" ifdesc="A vegetarian patty blended with mushrooms, carrots, green peppers, black olives, water chestnuts, brown rice and seasonings. Served on a kaiser." iextra=""/>
+     <item idesc="Excessive Cheddahbration" iid="4330" igroup="upl_online_tmpphp9ilcIs" ifat="15" icond="AI" icost="3.30" ifdesc="Check out this gourmet cheese sandwich on grilled Texas Toast with cheddar, monterey jack and provolone cheese." iextra=""/>
+     <item idesc="Bowl of Soup" iid="4333" igroup="upl_online_chili" ifat="15" icond="AK" icost="3.90" ifdesc="Bowl of one of our daily selections" iextra=""/>
+     <item idesc="Cup of Soup" iid="4334" igroup="upl_online_broc" ifat="15" icond="AK" icost="2.90" ifdesc="Cup of one of our daily selections" iextra=""/>
+ </station>
+ <station name="Daily Salads " id="210" type="sc">
+     <item idesc="Salad of the Month" iid="8196" igroup="upl_online_tmpphpzar0eL" ifat="15" icond="AI" icost="5.60" ifdesc="Zucchini Chicken Salad-A blend of romaine lettuce and spring mix, topped with grilled cajun chicken, zucchini, red onion and green pepper. Served with sweet vidalia onion  dressing and a breadstick." iextra=""/>
+     <item idesc="Chicken Caesar Salad" iid="4343" igroup="upl_online_tmpphpbG8wC0" ifat="15" icond="AI" icost="5.60" ifdesc="Grilled chicken strips on a bed of romaine lettuce topped with tomatoes, black olives, parmesan cheese and homemade croutons. Served with cream Caesar dressing and a garlic breadstick." iextra=""/>
+     <item idesc="Cranberry Honey Almond Chicken" iid="8120" igroup="upl_online_tmpphphwJ4j9" ifat="15" icost="5.60" ifdesc="Seasoned chicken tenders, romaine lettuce, mixed greens, celery, craisins, and toasted almonds. Served with honey mustard and a bread stick." iextra=""/>
+ </station>
+ <station name="Sidelines Extras" id="214" type="sc">
+     <item idesc="Chips" iid="192" igroup="upl_online_tmpphpIBQQA1" ifat="15" icost="0.95" ifdesc="1 3/4 oz bag of Chips" iextra=""/>
+     <item idesc="Batter dipped french fries" iid="3844" igroup="upl_online_tmpphpYo6j2k" ifat="15" icost="1.60" ifdesc="Batter dipped french fries." iextra=""/>
+     <item idesc="Lowfat Yogurt" iid="57" igroup="upl_online_tmpphpAPw4PW" ifat="0" icost="0.85" ifdesc="AE brand lowfat yogurt. Place flavor request in comments. Cannot guarantee availability." iextra=""/>
+     <item idesc="Garlic Breadstick" iid="59" igroup="upl_online_tmpphph69mlH" ifat="0" icost="0.65" ifdesc="A single breadstick flavored with garlic butter." iextra=""/>
+     <item idesc="Extra Dressing" iid="63" igroup="upl_online_tmpphpTz63ic" ifat="0" icost="0.50" ifdesc="Selection of extra dressings." iextra=""/>
+     <item idesc="Tossed Salad" iid="4618" igroup="upl_online_tmpphp5jcYfy" ifat="0" icond="AL" icost="1.60" ifdesc="Small tossed romaine lettuce salad with dressing cup" iextra=""/>
+     <item idesc="Hot Sauce" iid="5044" igroup="upl_online_tmpphps8235W" ifat="0" icost="0.30" ifdesc="A portion of our hot sauce" iextra=""/>
+     <item idesc="Salsa" iid="5045" igroup="upl_online_tmpphpwvfm1K" ifat="0" icost="0.30" ifdesc="A portion of our salsa." iextra=""/>
+     <item idesc="Cheese Stick" iid="5047" igroup="upl_online_tmpphpUeyhAN" ifat="0" icost="0.75" ifdesc="Choose from Mozzarella or Colby-Jack. 1 ounce each." iextra=""/>
+     <item idesc="Apple Wedges" iid="5046" igroup="upl_online_tmpphp8CiA4y" ifat="0" icost="1.00" ifdesc="An individual portion of apple wedges" iextra=""/>
+     <item idesc="Whole Fruit" iid="5049" igroup="upl_online_tmpphpln5h2R" ifat="0" icond="AM" icost="0.90" ifdesc="Your choice of a piece of whole fruit" iextra=""/>
+     <item idesc="Ice Cream Novelty" iid="8121" igroup="upl_online_tmpphplxIJz8" ifat="0" icost="0.70" ifdesc="A selection of Blue Bunny ice cream novelties" iextra=""/>
+ </station>
+ <station name="Beverages" id="212" type="sc">
+     <item idesc="24 oz Fountain Soda" iid="3840" igroup="upl_online_tmpphpDEFepR" ifat="15" icost="1.60" ifdesc="A 24oz fountain soda,Coke products." iextra=""/>
+     <item idesc="10 oz 2 Percent Milk" iid="3842" igroup="upl_online_ae" ifat="15" icost="0.75" ifdesc="10oz 2 Percent Milk" iextra=""/>
+     <item idesc="10 oz Skim Milk" iid="3843" igroup="upl_online_ae" ifat="15" icost="0.75" ifdesc="AE 10 oz Skim Milk" iextra=""/>
+     <item idesc="Orange Juice Carton" iid="8837" igroup="upl_online_ae" ifat="15" icost="0.60" ifdesc="Carton of orange juice" iextra=""/>
+ </station>
+</menu>
+<menu name="condiment">
+  <cc cclass="aa" cmin="0" cdisp="2" cond="Select 2 Toppings">
+    <cond cid="7272" cname="Beef" />
+    <cond cid="7274" cname="Pepperoni" />
+    <cond cid="7276" cname="Sausage" />
+    <cond cid="7278" cname="Italian Sausage" />
+    <cond cid="7280" cname="Ham" />
+    <cond cid="7282" cname="Bacon Bits" />
+    <cond cid="7284" cname="Onions" />
+    <cond cid="7286" cname="Tomatoes" />
+    <cond cid="7288" cname="Black Olives" />
+    <cond cid="7290" cname="Mushrooms" />
+    <cond cid="7292" cname="Pineapple" />
+    <cond cid="7294" cname="Green Peppers" />
+    <cond cid="7296" cname="Jalapeno Peppers" />
+    <cond cid="7298" cname="Banana Peppers" />
+  </cc>
+  <cc cclass="ab" cmin="0" cdisp="4" cond="Extra Toppings">
+    <cond cid="7202" cname="Beef"  ccost="1.00"/>
+    <cond cid="121" cname="Pepperoni"  ccost="1.00"/>
+    <cond cid="122" cname="Sausage"  ccost="1.00"/>
+    <cond cid="123" cname="Italian Sausage"  ccost="1.00"/>
+    <cond cid="124" cname="Ham"  ccost="1.00"/>
+    <cond cid="125" cname="Bacon Bits"  ccost="1.00"/>
+    <cond cid="126" cname="Onions"  ccost="1.00"/>
+    <cond cid="127" cname="Tomatoes"  ccost="1.00"/>
+    <cond cid="128" cname="Black Olives"  ccost="1.00"/>
+    <cond cid="129" cname="Mushrooms"  ccost="1.00"/>
+    <cond cid="130" cname="Pineapple"  ccost="1.00"/>
+    <cond cid="131" cname="Green Peppers"  ccost="1.00"/>
+    <cond cid="132" cname="Jalapeno Peppers"  ccost="1.00"/>
+    <cond cid="133" cname="Banana Peppers"  ccost="1.00"/>
+    <cond cid="134" cname="Cheddar Cheese"  ccost="1.50"/>
+    <cond cid="135" cname="Mozzarella Cheese"  ccost="1.50"/>
+  </cc>
+  <cc cclass="ac" cmin="1" cdisp="1" cond="Large SuperSticks">
+    <cond cid="9098" cname="14 Inch SuperSticks" cdef="1" />
+  </cc>
+  <cc cclass="ad" cmin="0" cdisp="1" cond="Select 1 Topping">
+    <cond cid="7300" cname="Beef" />
+    <cond cid="7302" cname="Pepperoni" />
+    <cond cid="7304" cname="Sausage" />
+    <cond cid="7306" cname="Italian Sausage" />
+    <cond cid="7308" cname="Ham" />
+    <cond cid="7310" cname="Bacon Bits" />
+    <cond cid="7312" cname="Onions" />
+    <cond cid="7314" cname="Tomatoes" />
+    <cond cid="7316" cname="Black Olives" />
+    <cond cid="7318" cname="Mushrooms" />
+    <cond cid="7320" cname="Pineapple" />
+    <cond cid="7322" cname="Green Peppers" />
+    <cond cid="7324" cname="Jalapeno Peppers" />
+    <cond cid="7326" cname="Banana Peppers" />
+  </cc>
+  <cc cclass="ae" cmin="0" cdisp="5" cond="Select 3-5 Toppings">
+    <cond cid="7328" cname="Beef" />
+    <cond cid="7330" cname="Pepperoni" />
+    <cond cid="7332" cname="Sausage" />
+    <cond cid="7334" cname="Italian Sausage" />
+    <cond cid="7336" cname="Ham" />
+    <cond cid="7338" cname="Bacon Bits" />
+    <cond cid="7340" cname="Onions" />
+    <cond cid="7342" cname="Tomatoes" />
+    <cond cid="7344" cname="Black Olives" />
+    <cond cid="7346" cname="Mushrooms" />
+    <cond cid="7348" cname="Pineapple" />
+    <cond cid="7350" cname="Green Peppers" />
+    <cond cid="7352" cname="Jalapeno Peppers" />
+    <cond cid="7354" cname="Banana Peppers" />
+  </cc>
+  <cc cclass="af" cmin="0" cdisp="99" cond="Omit Toppings">
+    <cond cid="152" cname="No Beef" />
+    <cond cid="153" cname="No Pepperoni" />
+    <cond cid="154" cname="No Sausage" />
+    <cond cid="155" cname="No Italian Sausage" />
+    <cond cid="156" cname="No Ham" />
+    <cond cid="157" cname="No Bacon Bits" />
+    <cond cid="158" cname="No Onions" />
+    <cond cid="159" cname="No Tomatoes" />
+    <cond cid="160" cname="No Black Olives" />
+    <cond cid="161" cname="No Mushrooms" />
+    <cond cid="162" cname="No Pineapple" />
+    <cond cid="163" cname="No Green Peppers" />
+    <cond cid="164" cname="No Jalapeno Peppers" />
+    <cond cid="165" cname="No Banana Peppers" />
+    <cond cid="166" cname="No Cheddar Cheese" />
+    <cond cid="167" cname="No Mozzarella Cheese" />
+    <cond cid="168" cname="No Lettuce" />
+  </cc>
+  <cc cclass="ag" cmin="1" cdisp="1" cond="Slice Options">
+    <cond cid="8751" cname="Pepperoni" cdef="1" />
+    <cond cid="8753" cname="Sausage" />
+    <cond cid="8755" cname="Cheese" />
+    <cond cid="9983" cname="Thin Baja Taco" />
+  </cc>
+  <cc cclass="ah" cmin="1" cdisp="2" cond="2 Slice Options">
+    <cond cid="8839" cname="Pepperoni" cdef="1" />
+    <cond cid="8841" cname="Sausage" />
+    <cond cid="8843" cname="Cheese" />
+    <cond cid="9981" cname="Thin Baja Taco" />
+  </cc>
+  <cc cclass="ai" cmin="0" cdisp="1" cond="Basket">
+    <cond cid="100" cname="French Fries And Fountain Beverage Basket"  ccost="2.60"/>
+    <cond cid="4336" cname="Onion Rings And Fountain Beverage Basket"  ccost="3.25"/>
+    <cond cid="4338" cname="Tossed Salad And Fountain Beverage Basket"  ccost="2.60"/>
+  </cc>
+  <cc cclass="aj" cmin="0" cdisp="1" cond="Seasonings">
+    <cond cid="107" cname="Cajun" />
+    <cond cid="108" cname="Fajita" />
+    <cond cid="109" cname="Greek" />
+  </cc>
+  <cc cclass="ak" cmin="0" cdisp="1" cond="Daily Soup">
+    <cond cid="605" cname="Broccoli Cheddar" />
+  </cc>
+  <cc cclass="al" cmin="0" cdisp="1" cond="salad">
+  </cc>
+  <cc cclass="am" cmin="0" cdisp="1" cond="Fruit">
+    <cond cid="141" cname="Green Apple" />
+    <cond cid="5051" cname="Red Apple" />
+    <cond cid="5053" cname="Orange" />
+    <cond cid="5055" cname="Banana" />
+  </cc>
+</menu>
