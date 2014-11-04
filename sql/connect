@@ -1,0 +1,3 @@
+#!/bin/bash
+# quick script to connect to local database
+mysql -u webfood -pwebfoodpasswd webfood

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-var debug = require('debug')('WebFood');
+var debug = require('debug')('webfood');
 var app = require('../app');
 
 app.set('port', process.env.PORT || 3000);
