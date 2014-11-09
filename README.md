@@ -27,3 +27,33 @@ Lastly, start the server:
 ```
 
 Then navigate to http://localhost:3000 (or whatever port was chosen)
+
+API
+----
+
+### Logging In ###
+
+`POST /auth/login`
+
+Attempts to login to the system and start a session.
+
+Request Body:
+json with username and password fields: `{ "username": "<username>", "password": "<password>" }`
+
+Response Body (success):
+json object with user property, containing informatin about the user. Starts a session.
+
+### Registering ###
+
+`POST /auth/register`
+
+Attempt to register a user.
+
+Request Body:
+json with a username and password field (see `/auth/login` route)
+
+Response Body (error):
+If an error occurs, such as the user already exists, a 400 Bad Request response is sent back
+
+Response Body (success):
+Sends back information about the newly registered user and logs them in
