@@ -1,7 +1,7 @@
 var User = require('../data/user');
 var LocalStrategy = require('passport-local').Strategy;
 var bcrypt = require('bcrypt-nodejs');
-var debug = require('debug')('webfood.passport');
+var debug = require('debug')('webfood:passport');
 var q = require('q');
 
 var verifyPassword = function(password, hash) {
@@ -37,7 +37,7 @@ module.exports = function(passport) {
     passport.use('local', new LocalStrategy(
         function(username, password, done) {
             debug('Login Strategy invoked for ' +username);
-            return User.findOne({email: username}).then(function(user) {
+            return User.findOne({username: username}).then(function(user) {
                 if (user == null) {
                     return done(null, false, {message: 'unknown user'});
                 }

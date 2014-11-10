@@ -1,48 +1,43 @@
 var q = require('q');
-var bookshelf = require('./connection');
-var debug = require('debug')('webfood.userdao');
+var debug = require('debug')('webfood:userdao');
 
-var User = bookshelf.Model.extend({
-	tableName: 'users'
-}, {
+module.exports = {};
 
-	findOne: function(criteria) {
+var db = require('./connection')(function (err, db) {
+	var User = require('mongolia').model(db, 'members');
+
+	module.exports.create = function (username, hashedPassword) {
 		var deferred = q.defer();
-
-		new this(criteria).fetch().tap(function(user) {
-			if (!user) deferred.resolve(null);
-			else deferred.resolve(user.attributes);
-		}, function(err) {
-			deferred.resolve(null);
+		debug('Registering: ', username, hashedPassword);
+		User.mongo('insert', {
+			username: username,
+			password: hashedPassword
+		}, function(err, documents) {
+			if (err) debug('err: ', err);
+			else debug('Registration success');
+			deferred.resolve(documents);
 		});
 
 		return deferred.promise;
-	},
+	};
 
-	findByEmail: function(email) {
+	module.exports.findByEmail = function (email) {
+		return module.exports.findOne({username: email});
+	};
+
+	module.exports.findOne = function (criteria) {
 		var deferred = q.defer();
 
-		new this({ email: email.trim() }).fetch({ require: true }).tap(function(user) {
-			deferred.resolve(user.attributes);
-		}, function(err) {
-			console.log('err: ', err);
+		User.findOne(criteria, function (err, result) {
+			if (err) {
+				debug('findOne err: ', err);
+				deferred.reject(err);
+			}
+			else {
+				deferred.resolve(result);
+			}
 		});
 
 		return deferred.promise;
-	},
-
-	create: function(email, hashedPassword) {
-		debug('Create: ', email, hashedPassword);
-		var self = this;
-
-		return new self({ email: email, password: hashedPassword }).save().then(function(user) {
-			debug('Created: ', user.attributes);
-			return user.attributes;
-		}, function(err) {
-			debug('Error in create:', err);
-			return null;
-		});
-	}
+	};
 });
-
-module.exports = User;
