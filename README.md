@@ -8,7 +8,7 @@ Installation
 
 These instructions work on Linux and should work on Windows or Mac.
 
-To install, first make sure you have [nodejs](https://nodejs.org) and [npm](https://npmjs.org) installed.
+To install, first make sure you have [nodejs](https://nodejs.org) and [npm](https://npmjs.org) installed. Additionally, python (version 2) is required to build some of the dependencies in the project.
 
 Clone the repo, go into it's root folder, and have npm pull the dependencies for the project:
 
