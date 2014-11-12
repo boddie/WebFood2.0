@@ -8,8 +8,6 @@ var passport = require('passport');
 var debug = require('debug')('webfood');
 var User = require('./data/user');
 
-var routes = require('./routes/index');
-
 var app = express();
 
 app.use(logger('dev'));
