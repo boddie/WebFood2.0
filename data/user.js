@@ -1,12 +1,9 @@
 var q = require('q');
 var debug = require('debug')('webfood:userdao');
 
-module.exports = {};
-
-var db = require('./connection')(function (err, db) {
+module.exports = function(db) {
 	var User = require('mongolia').model(db, 'members');
-
-	module.exports.create = function (username, hashedPassword) {
+	var create = function (username, hashedPassword) {
 		var deferred = q.defer();
 		debug('Registering: ', username, hashedPassword);
 		User.mongo('insert', {
@@ -20,12 +17,10 @@ var db = require('./connection')(function (err, db) {
 
 		return deferred.promise;
 	};
-
-	module.exports.findByEmail = function (email) {
-		return module.exports.findOne({username: email});
+	var findByEmail = function (email) {
+		return findOne({username: email});
 	};
-
-	module.exports.findOne = function (criteria) {
+	var findOne = function (criteria) {
 		var deferred = q.defer();
 
 		User.findOne(criteria, function (err, result) {
@@ -40,4 +35,10 @@ var db = require('./connection')(function (err, db) {
 
 		return deferred.promise;
 	};
-});
+	return {
+		create : create,
+		findByEmail : findByEmail, 
+		findOne : findOne
+
+	};
+};
