@@ -1,0 +1,9 @@
+{
+	"name": "NODEJS_MONGO",
+	"version": "0.0.1",
+	"description": "",
+	"dependencies": {
+		"mongodb": "^1.4.7"
+	},
+	"devDependencies": {}
+}
