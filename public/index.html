@@ -32,19 +32,16 @@
 				<a class="navbar-brand" href="#">WebFood 2.0</a>
 			</div>
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<a href="#signinModal" role="button" data-toggle="modal"> Sign In </a>
-					</li>
-				</ul>
-			</div><!-- /.navbar-collapse -->
-		</div><!-- /.container-fluid -->
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#signinModal" role="button" data-toggle="modal"> Sign In </a></li>
+				<li><a href="#registerModal" role="button" data-toggle="modal"> Register </a></li>
+				
+			</ul>
+		</div><!-- container-fluid -->
 	</nav>
 
 	<div class="container">
-		<!--Sign In Button-->		
+		<!--Sign In-->		
 		<div class="modal fade" id="signinModal">
 		  <div class="modal-dialog">
 			<div class="modal-content">
@@ -77,11 +74,52 @@
 			</div><!-- end modal-content -->
 		  </div><!-- end modal-dialog -->
 		</div><!-- end modal -->
-
 	</div><!--end container-->
 	
 	<div class="container">
-		<!--Order Button-->		
+		<!--Register-->		
+		<div class="modal fade" id="registerModal">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title">Register</h4>
+			  </div>
+			  
+			  <div class="modal-body">
+				<form role="form">
+					<!--Email input box-->
+					<div class="form-group">
+						<label for="username">User Name:</label>
+						<input type="username" class="form-control" id="username" placeholder="Enter username">
+					</div>
+
+					<!--Password input box-->
+					<div class="form-group">
+						<label for="password">Password:</label>
+						<input type="password" class="form-control" id="password" placeholder="Enter password">
+					</div>
+					
+					<!--Confirm Password input box-->
+					<div class="form-group">
+						<label for="password">Confirm Password:</label>
+						<input type="password" class="form-control" id="repassword" placeholder="Re-enter password">
+					</div>
+				</form>
+			  </div>
+			  
+			  <div class="modal-footer">
+				<button id="registerButton" type="button" class="btn btn-primary" data-dismiss="modal">Register</button>
+			  </div>
+			  
+			</div><!-- end modal-content -->
+		  </div><!-- end modal-dialog -->
+		</div><!-- end modal -->
+	</div><!--end container-->
+	
+	<div class="container">
+		<!--Order-->		
 		<div class="modal fade" id="orderReview">
 		  <div class="modal-dialog">
 			<div class="modal-content">
@@ -100,20 +138,27 @@
 			</div><!-- end modal-content -->
 		  </div><!-- end modal-dialog -->
 		</div><!-- end modal -->
-
 	</div><!--end container-->
-
-	<script><!-- Script to send JSON info to login -->
+	
+	<script><!-- Scripts to send JSON info-->
 		$(document).ready(function() {
 			$("#signinButton").click(function(e) {
 				$.post("/auth/login", {
 						username:$('#username').val(),
 						password:$('#password').val()
-					},
-					function(data,status) {
-						alert("Data: " + data + "\nStatus: " + status);
+					}
 				});
-				alert("username: " + $('#username').val(), "password: " + $('#password').val());
+			});
+		});
+		
+		$(document).ready(function() {
+			$("#registerButton").click(function(e) {
+				$.post("/auth/login", {
+						username:$('#username').val(),
+						password:$('#password').val(),
+						repassword:$('#repassword').val(),
+					}
+				});
 			});
 		});
 		
@@ -122,11 +167,8 @@
 				$.post("/auth/login", {
 						username:$('#username').val(),
 						password:$('#password').val()
-					},
-					function(data,status) {
-						alert("Data: " + data + "\nStatus: " + status);
+					}
 				});
-				alert("username: " + $('#username').val(), "password: " + $('#password').val());
 			});
 		});
 		
