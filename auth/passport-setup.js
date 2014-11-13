@@ -1,4 +1,4 @@
-var User = require('../data/user');
+var userRepo = require('../data/user');
 var LocalStrategy = require('passport-local').Strategy;
 var bcrypt = require('bcrypt-nodejs');
 var debug = require('debug')('webfood:passport');
@@ -15,6 +15,11 @@ var verifyPassword = function(password, hash) {
 
     return deferred.promise;
 };
+
+var User;
+require('../data/connection')(function(err, db) {
+    User = userRepo(db);
+})
 
 
 module.exports = function(passport) {
@@ -58,7 +63,7 @@ module.exports = function(passport) {
         debug('Attempt to register ', req.body.username);
         var username = req.body.username;
         var password = req.body.password;
-        User.findOne({email:username}).then(function(user) {
+        User.findOne({username:username}).then(function(user) {
             if (user) {
                 res.status(400);
                 res.send({success: false, message: "Username is taken"});
