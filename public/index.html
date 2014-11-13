@@ -162,8 +162,12 @@
 		$(document).ready(function(){
 			$("#confirmOrder").click(function(e) {
 				$.post("/auth/login", {
-					username:$('#username').val(),
-					password:$('#password').val()
+					"location": "<location>",
+					"price": 3.14,
+					"entree": "Pie",
+					"beverage": "<beverage>",
+					"sides": ["sides1", "side2"],
+					"other": "..."
 				});
 			});
 		});
