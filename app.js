@@ -7,6 +7,7 @@ var session = require('express-session');
 var passport = require('passport');
 var debug = require('debug')('webfood');
 var User = require('./data/user');
+var OrderRepo = require('./data/order');
 
 var app = express();
 
@@ -24,6 +25,8 @@ initPassport(passport);
 
 var ensureAuthenticated = function(req, res, next) {
     debug('ensureAuthenticated invoked');
+    // TODO: Remove, this disables required authentication for debugging
+    return next();
     if (req.isAuthenticated()) { return next(); }
     res.status(401);
     res.send({ error: 'Authentication required' });
@@ -40,6 +43,52 @@ var router = express.Router();
 router.get('/restricted', ensureAuthenticated, function(req, res) {
     debug('/restricted invoked');
     res.send({user: req.user});
+});
+
+/**
+ * POST /api/create-order
+ *
+ * Create a new order
+ *
+ * Request Body:
+ *     {
+ *         "location": "<location>",
+ *         "price": Number,
+ *         "entree": "<entree>",
+ *         "beverage": "<beverage>",
+ *         "sides": ["sides1", "side2"],
+ *         "other": "..."
+ *     }
+ * Response:
+ *     {
+ *         "_id": Number,
+ *         "location": "<location>",
+ *         "price": Number,
+ *         "entree": "<entree>",
+ *         "beverage": "<beverage>",
+ *         "sides": ["sides1", "side2"],
+ *         "other": "..."
+ *     }
+ */
+router.post('/api/create-order', ensureAuthenticated, function(req, res) {
+    debug('/api/create-order invoked');
+    debug('order params: ', req.body);
+    if (!req.body.location || !req.body.entree || !req.body.beverage || !req.body.price)
+    {
+        // Bad request, need to have at least these four parameters
+        res.status(400).send({ "message": "Missing parameters. Requires beverage, entree, price, location" });
+        return;
+    }
+    require('./data/connection')(function(err, db) {
+        var Order = OrderRepo(db);
+        Order.createOrder(req.body.location, req.body.price, req.body.entree, req.body.beverage, req.body.sides, req.body.other)
+        .then(function (result) {
+            debug('Result of create: ', result);
+            res.send(result[0]);
+        }, function (err) {
+            res.status(500).send({"message": "Database error", err: err});
+        });
+    });
 });
 
 /**
