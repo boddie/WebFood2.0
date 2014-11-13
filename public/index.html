@@ -24,7 +24,7 @@
 </head>
 
 <body>
-	<!-- The navigation bar will be present on all "pages" -->
+	<!-- The navigation bar will be present on all "pages" because it isn't in the React script-->
 	<nav class="navbar navbar-default" role="navigation">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -129,7 +129,6 @@
 				<h4 class="modal-title">Food Ordered</h4>
 			  </div>
 			  
-			  
 			  <div class="modal-footer">
 				<button id="confirmOrder" type="button" class="btn btn-primary" data-dismiss="modal">Confirm Order</button>
 				<button id="cancelOrder" type="button" class="btn btn-danger" data-dismiss="modal">Cancel Order</button>
@@ -144,9 +143,8 @@
 		$(document).ready(function() {
 			$("#signinButton").click(function(e) {
 				$.post("/auth/login", {
-						username:$('#username').val(),
-						password:$('#password').val()
-					}
+					username:$('#username').val(),
+					password:$('#password').val()
 				});
 			});
 		});
@@ -154,10 +152,9 @@
 		$(document).ready(function() {
 			$("#registerButton").click(function(e) {
 				$.post("/auth/login", {
-						username:$('#username').val(),
-						password:$('#password').val(),
-						repassword:$('#repassword').val(),
-					}
+					username:$('#username').val(),
+					password:$('#password').val(),
+					repassword:$('#repassword').val(),
 				});
 			});
 		});
@@ -165,28 +162,14 @@
 		$(document).ready(function(){
 			$("#confirmOrder").click(function(e) {
 				$.post("/auth/login", {
-						username:$('#username').val(),
-						password:$('#password').val()
-					}
+					username:$('#username').val(),
+					password:$('#password').val()
 				});
-			});
-		});
-		
-		$(document).ready(function(){
-			$("#cancelOrder").click(function(e) {
-				$.post("/auth/login", {
-						username:$('#username').val(),
-						password:$('#password').val()
-					},
-					function(data,status) {
-						alert("Data: " + data + "\nStatus: " + status);
-				});
-				alert("username: " + $('#username').val(), "password: " + $('#password').val());
 			});
 		});
 	</script>
 	
-<div id="page"></div><!-- This is where the actual body of the "pages" start -->
+<div id="page"></div><!-- This is where the actual body of the "pages" start, inherited to from phase 1 -->
 <script type="text/jsx">
       /**
        * @jsx React.DOM
