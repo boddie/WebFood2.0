@@ -26,7 +26,7 @@ describe('Testing the user.js methods', function() {
 				//console.log(res);
 				// Gets username of the user to make sure it is correct
 				expect(res[0].username).toEqual('userName'); 
-				// Gets password of the order to make sure it is correct
+				// Gets password of the user to make sure it is correct
 				expect(res[0].password).toEqual('password');
 				
 				done(); // Async returned so call 'done'
@@ -36,13 +36,13 @@ describe('Testing the user.js methods', function() {
 	
 	// This block tests the functionality of the 'getLocationOrders' function
 	// NOTE: The 'done' parameter is for jasmine to know when the test is done
-	it('Pulling orders should return success', function(done) {
+	it('Pulling user data should return success', function(done) {
 		require('../data/connection')(function(err, db) {
 			var User = user(db);
 			User.findOne({username: "userName"})
 			.then(function (res) { // .then is part of 'q' library returned promise
 				console.log(res);
-				// Test that an entry has the entree 'test_entree' field like it should
+				// Test that an username entered was the same userName returned
 				expect(res.username).toEqual('userName');
 				// Closes the database connection
 				db.close();
