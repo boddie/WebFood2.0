@@ -79,6 +79,29 @@
 		</div><!-- end modal -->
 
 	</div><!--end container-->
+	
+	<div class="container">
+		<!--Order Button-->		
+		<div class="modal fade" id="orderReview">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title">Food Ordered</h4>
+			  </div>
+			  
+			  
+			  <div class="modal-footer">
+				<button id="confirmOrder" type="button" class="btn btn-primary" data-dismiss="modal">Confirm Order</button>
+				<button id="cancelOrder" type="button" class="btn btn-danger" data-dismiss="modal">Cancel Order</button>
+			  </div>
+			  
+			</div><!-- end modal-content -->
+		  </div><!-- end modal-dialog -->
+		</div><!-- end modal -->
+
+	</div><!--end container-->
 
 	<script><!-- Script to send JSON info to login -->
 		$(document).ready(function() {
@@ -95,8 +118,28 @@
 		});
 		
 		$(document).ready(function(){
-			$("body").on("click", "#orderButton", function() {
-				confirm("You Ordered!");
+			$("#confirmOrder").click(function(e) {
+				$.post("/auth/login", {
+						username:$('#username').val(),
+						password:$('#password').val()
+					},
+					function(data,status) {
+						alert("Data: " + data + "\nStatus: " + status);
+				});
+				alert("username: " + $('#username').val(), "password: " + $('#password').val());
+			});
+		});
+		
+		$(document).ready(function(){
+			$("#cancelOrder").click(function(e) {
+				$.post("/auth/login", {
+						username:$('#username').val(),
+						password:$('#password').val()
+					},
+					function(data,status) {
+						alert("Data: " + data + "\nStatus: " + status);
+				});
+				alert("username: " + $('#username').val(), "password: " + $('#password').val());
 			});
 		});
 	</script>
@@ -330,7 +373,8 @@
                 <div className="customize-order-info-container col-sm-10">
                   <h4 className="customize-order-name">{this.state.selected.description}</h4>
                   <div className="customize-order-description">{this.state.selected.longDescription}</div>
-				  <button type="button" id="orderButton" class="btnOrder">Send Order</button>
+				  <a href="#orderReview" role="button" data-toggle="modal">Send Order</a>
+				  
                 </div>
               </div>
 
