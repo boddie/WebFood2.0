@@ -57,3 +57,29 @@ If an error occurs, such as the user already exists, a 400 Bad Request response 
 
 Response Body (success):
 Sends back information about the newly registered user and logs them in
+
+### Placing an Order ###
+
+POST /api/create-order
+
+Create a new order
+
+Request Body:
+  {
+      "location": "<location>",
+      "price": Number,
+      "entree": "<entree>",
+      "beverage": "<beverage>",
+      "sides": ["sides1", "side2"],
+      "other": "..."
+  }
+Response:
+  {
+      "_id": Number,
+      "location": "<location>",
+      "price": Number,
+      "entree": "<entree>",
+      "beverage": "<beverage>",
+      "sides": ["sides1", "side2"],
+      "other": "..."
+  }
