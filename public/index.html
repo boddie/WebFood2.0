@@ -22,8 +22,86 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
+
 <body>
-<div id="page"></div>
+	<!-- The navigation bar will be present on all "pages" -->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">WebFood 2.0</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#signinModal" role="button" data-toggle="modal"> Sign In </a>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div class="container">
+		<!--Sign In Button-->		
+		<div class="modal fade" id="signinModal">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title">Sign In</h4>
+			  </div>
+			  
+			  <div class="modal-body">
+				<form role="form">
+					<!--Email input box-->
+					<div class="form-group">
+						<label for="email">User Name:</label>
+						<input type="email" class="form-control" id="username" placeholder="Enter username">
+					</div>
+
+					<!--Password input box-->
+					<div class="form-group">
+						<label for="pwd">Password:</label>
+						<input type="password" class="form-control" id="password" placeholder="Enter password">
+					</div>
+				</form>
+			  </div>
+			  
+			  <div class="modal-footer">
+				<button id="signinButton" type="button" class="btn btn-primary" data-dismiss="modal">Sign In</button>
+			  </div>
+			  
+			</div><!-- end modal-content -->
+		  </div><!-- end modal-dialog -->
+		</div><!-- end modal -->
+
+	</div><!--end container-->
+
+	<script><!-- Script to send JSON info to login -->
+		$(document).ready(function() {
+			$("#signinButton").click(function(e) {
+				$.post("/auth/login", {
+						username:$('#username').val(),
+						password:$('#password').val()
+					},
+					function(data,status) {
+						alert("Data: " + data + "\nStatus: " + status);
+				});
+				alert("username: " + $('#username').val(), "password: " + $('#password').val());
+			});
+		});
+		
+		$(document).ready(function(){
+			$("body").on("click", "#orderButton", function() {
+				confirm("You Ordered!");
+			});
+		});
+	</script>
+	
+<div id="page"></div><!-- This is where the actual body of the "pages" start -->
 <script type="text/jsx">
       /**
        * @jsx React.DOM
@@ -40,7 +118,7 @@
       var Header = React.createClass({
         render: function() {
           return (
-            <h1>WebFood 2.0</h1>
+            <h1></h1>
           );
         }
       });
@@ -252,18 +330,21 @@
                 <div className="customize-order-info-container col-sm-10">
                   <h4 className="customize-order-name">{this.state.selected.description}</h4>
                   <div className="customize-order-description">{this.state.selected.longDescription}</div>
+				  <button type="button" id="orderButton" class="btnOrder">Send Order</button>
                 </div>
               </div>
 
               <div>
                 {menus}
               </div>
-
+			
             </div>
           );
         }
       });
-
+	  
+	  
+	  
       var BaseView = React.createClass({
         render: function() {
           return (
@@ -304,7 +385,6 @@
     });
 
     Backbone.history.start({pushState: false});
-
 
     </script>
 </body>
