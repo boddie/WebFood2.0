@@ -20,8 +20,7 @@
     "node-bcrypt": "0.0.1",
     "passport": "^0.2.1",
     "passport-local": "^1.0.0",
-    "q": "^1.0.1",
-    "xmldom": "^0.1.19"
+    "q": "^1.0.1"
   },
   "devDependencies": {
 	"jasmine-node": ""
