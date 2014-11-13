@@ -15,7 +15,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser('uncreative-secret'));
-app.use(session({ secret: 'uncreative-secret' }));
+app.use(session({ secret: 'uncreative-secret', coookie: {httpOnly: false} }));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(express.static(path.join(__dirname, 'public')));

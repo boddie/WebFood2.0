@@ -161,14 +161,17 @@
 		
 		$(document).ready(function(){
 			$("#confirmOrder").click(function(e) {
-				$.post("/auth/login", {
+				$.post("/api/create-order", {
 					"location": "<location>",
 					"price": 3.14,
 					"entree": "Pie",
 					"beverage": "<beverage>",
 					"sides": ["sides1", "side2"],
 					"other": "..."
-				});
+				})
+        .then(function (response) {
+          console.log('Order created: ', response);
+        });
 			});
 		});
 	</script>
